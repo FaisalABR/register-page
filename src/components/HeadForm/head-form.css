@@ -1,0 +1,27 @@
+.container-headform {
+  margin-top: 10rem;
+  width: 90%;
+  padding: 0 5rem;
+  line-height: 3rem;
+}
+
+h2 {
+  color: #9c9da2;
+}
+
+h1 {
+  color: #ededee;
+}
+
+h1 span {
+  font-size: 5rem;
+  color: #5195ea;
+}
+
+p {
+  color: #9c9da2;
+}
+
+p span {
+  color: #0449e9;
+}

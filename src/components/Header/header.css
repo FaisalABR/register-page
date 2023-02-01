@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  gap: 4rem;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+
+h1 {
+  margin-right: 2rem;
+}
