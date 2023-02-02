@@ -4,9 +4,9 @@ import "./input-form.css";
 
 const InputForm = (props) => {
   const [focus, setFocus] = useState(false);
-  const { id, label, onChange, value, errorMessage, ...inputsForm } = props;
+  const { id, label, onChange, errorMessage, ...inputsForm } = props;
 
-  const handleFocus = () => {
+  const handleFocus = (e) => {
     setFocus(true);
   };
 
@@ -16,7 +16,6 @@ const InputForm = (props) => {
       <input
         {...inputsForm}
         onChange={onChange}
-        value={value}
         onBlur={handleFocus}
         focused={focus.toString()}
         onFocus={() => inputsForm.name === "confirmPassword" && setFocus(true)}

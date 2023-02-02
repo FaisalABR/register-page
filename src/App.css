@@ -6,23 +6,24 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: linear-gradient(
-      60deg,
-      rgb(46, 57, 82),
-      rgb(27, 42, 74) 60%,
-      rgba(27, 42, 74) 60%,
-      rgba(27, 42, 74) 40%,
-      rgba(0, 0, 0, 0.3)
-    ),
-    url("./assets/forest.jpg");
-  background-position: left 100% top 1000%;
-  background-size: cover;
-  background-repeat: round;
 }
 
 .App {
-  height: 120vh;
   width: 100%;
+  position: relative;
+  background-image: linear-gradient(
+      60deg,
+      rgb(46, 57, 82),
+      rgb(27, 42, 74) 50%,
+      rgba(27, 42, 74) 30%,
+      rgba(27, 42, 74) 30%,
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./assets/forest.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 10rem;
 }
 
 .content {

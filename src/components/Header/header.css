@@ -8,8 +8,54 @@
   gap: 4rem;
   align-items: center;
   padding: 2rem 3rem;
+  transition: 0.5s ease;
+}
+
+.header > * ~ * {
+  cursor: pointer;
 }
 
 h1 {
   margin-right: 2rem;
+}
+
+ul {
+  display: flex;
+  gap: 3rem;
+}
+
+li {
+  list-style: none;
+  color: #adafba;
+  position: relative;
+}
+
+li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  transform: translateX(-50%);
+  height: 2px;
+  border-radius: 10px;
+  background-color: #5195ea;
+  transition: 0.2s ease-in;
+}
+
+li:hover::after,
+li:active::after {
+  width: 100%;
+}
+
+.on-scroll {
+  background-color: #7084d0;
+  padding: 1rem 2rem;
+}
+
+.on-scroll li {
+  color: #ffffff;
+}
+.on-scroll li::after {
+  background-color: #fff;
 }
